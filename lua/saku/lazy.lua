@@ -15,6 +15,6 @@ require("lazy").setup("saku.plugins", {
   change_detection = {
     notify = false,
   },
-}
+})
 
 require("lazy").setup("saku.plugins")
