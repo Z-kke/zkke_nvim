@@ -17,4 +17,12 @@ require("lazy").setup("saku.plugins", {
   },
 })
 
-require("lazy").setup("saku.plugins")
+require("lazy").setup("saku.plugins", {
+  checker = {
+    enabled = true,
+    notify = false,
+  },
+  change_detection = {
+    notify = false,
+  },
+})
