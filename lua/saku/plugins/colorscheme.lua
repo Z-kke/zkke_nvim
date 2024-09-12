@@ -8,8 +8,6 @@ return {
 				-- optional configuration here
 			})
 			require("bamboo").load()
-			-- load the colorscheme here
-			vim.cmd([[colorscheme tokyonight]])
 		end,
 	},
 }
