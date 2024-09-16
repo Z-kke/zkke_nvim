@@ -42,3 +42,9 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- autosave
+vim.api.nvim_create_autocmd(
+	{ "FocusLost", "ModeChanged", "TextChanged", "BufEnter" },
+	{ desc = "autosave", pattern = "*", command = "silent! update" }
+)
