@@ -1,13 +1,7 @@
 return {
-	{
-		"ribru17/bamboo.nvim",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			require("bamboo").setup({
-				-- optional configuration here
-			})
-			require("bamboo").load()
-		end,
-	},
+	"nyoom-engineering/oxocarbon.nvim",
+	-- Add in any other configuration;
+	--   event = foo,
+	--   config = bar
+	--   end,
 }
