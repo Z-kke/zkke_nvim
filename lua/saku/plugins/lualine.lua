@@ -6,46 +6,46 @@ return {
 		local lazy_status = require("lazy.status") -- to configure lazy pending updates count
 
 		local colors = {
-			blue = "#65D1FF",
-			green = "#3EFFDC",
-			violet = "#FF61EF",
-			yellow = "#FFDA7B",
-			red = "#FF4A4A",
+			black = "#000000",
+			white = "#FFFFFF",
+			gray = "#808080",
+			dark_gray = "#2E2E2E",
+			light_gray = "#D3D3D3",
 			fg = "#c3ccdc",
-			bg = "#112638",
-			inactive_bg = "#2c3043",
+			bg = "#121212",
+			inactive_bg = "#1C1C1C",
 		}
 
 		local my_lualine_theme = {
 			normal = {
-				a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
-				b = { bg = colors.bg, fg = colors.fg },
-				c = { bg = colors.bg, fg = colors.fg },
+				a = { bg = colors.white, fg = colors.bg, gui = "bold" },
+				b = { bg = colors.bg, fg = colors.white },
+				c = { bg = colors.bg, fg = colors.gray },
 			},
 			insert = {
-				a = { bg = colors.green, fg = colors.bg, gui = "bold" },
-				b = { bg = colors.bg, fg = colors.fg },
-				c = { bg = colors.bg, fg = colors.fg },
+				a = { bg = colors.light_gray, fg = colors.bg, gui = "bold" },
+				b = { bg = colors.bg, fg = colors.white },
+				c = { bg = colors.bg, fg = colors.gray },
 			},
 			visual = {
-				a = { bg = colors.violet, fg = colors.bg, gui = "bold" },
-				b = { bg = colors.bg, fg = colors.fg },
-				c = { bg = colors.bg, fg = colors.fg },
+				a = { bg = colors.gray, fg = colors.bg, gui = "bold" },
+				b = { bg = colors.bg, fg = colors.white },
+				c = { bg = colors.bg, fg = colors.gray },
 			},
 			command = {
-				a = { bg = colors.yellow, fg = colors.bg, gui = "bold" },
-				b = { bg = colors.bg, fg = colors.fg },
-				c = { bg = colors.bg, fg = colors.fg },
+				a = { bg = colors.dark_gray, fg = colors.bg, gui = "bold" },
+				b = { bg = colors.bg, fg = colors.white },
+				c = { bg = colors.bg, fg = colors.gray },
 			},
 			replace = {
-				a = { bg = colors.red, fg = colors.bg, gui = "bold" },
-				b = { bg = colors.bg, fg = colors.fg },
-				c = { bg = colors.bg, fg = colors.fg },
+				a = { bg = colors.gray, fg = colors.bg, gui = "bold" },
+				b = { bg = colors.bg, fg = colors.white },
+				c = { bg = colors.bg, fg = colors.gray },
 			},
 			inactive = {
-				a = { bg = colors.inactive_bg, fg = colors.semilightgray, gui = "bold" },
-				b = { bg = colors.inactive_bg, fg = colors.semilightgray },
-				c = { bg = colors.inactive_bg, fg = colors.semilightgray },
+				a = { bg = colors.inactive_bg, fg = colors.light_gray, gui = "bold" },
+				b = { bg = colors.inactive_bg, fg = colors.light_gray },
+				c = { bg = colors.inactive_bg, fg = colors.light_gray },
 			},
 		}
 
@@ -59,7 +59,7 @@ return {
 					{
 						lazy_status.updates,
 						cond = lazy_status.has_updates,
-						color = { fg = "#ff9e64" },
+						color = { fg = "#A9A9A9" }, -- adjust to match the monochrome theme
 					},
 					{ "encoding" },
 					{ "fileformat" },
