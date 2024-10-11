@@ -1,7 +1,32 @@
 return {
-	"nyoom-engineering/oxocarbon.nvim",
-	-- Add in any other configuration;
-	--   event = foo,
-	--   config = bar
-	--   end,
+	-- Oxocarbon theme
+	{
+		"nyoom-engineering/oxocarbon.nvim",
+		config = function()
+			vim.cmd("colorscheme oxocarbon")
+		end,
+	},
+	-- Tokyo Night theme
+	{
+		"folke/tokyonight.nvim",
+		config = function()
+			vim.cmd("colorscheme tokyonight-night")
+		end,
+	},
+	-- Catppuccin theme
+	{
+		"catppuccin/nvim",
+		config = function()
+			require("catppuccin").setup({ flavour = "mocha" })
+			vim.cmd("colorscheme catppuccin")
+		end,
+	},
+	{
+		-- Kanagawa theme
+		"rebelot/kanagawa.nvim",
+		config = function()
+			require("kanagawa").setup({})
+			vim.cmd("colorscheme kanagawa-dragon")
+		end,
+	},
 }
