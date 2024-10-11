@@ -1,7 +1,7 @@
 local themes = {
 	"kanagawa-dragon",
 	"oxocarbon",
-	"tokyonight-night",
+	"tokyonight",
 	"catppuccin",
 }
 
