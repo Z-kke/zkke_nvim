@@ -22,4 +22,4 @@ require("lazy").setup({ { import = "saku.plugins" }, { import = "saku.plugins.ls
 })
 
 vim.opt.background = "dark" -- set this to dark or light
-vim.cmd.colorscheme "oxocarbon"
+vim.cmd.colorscheme "catppuccin"
