@@ -29,6 +29,8 @@ return {
 			ensure_installed = {
 				"html",
 				"ts_ls",
+				"terraformls",
+				"tflint",
 				"cssls",
 				"tailwindcss",
 				"svelte",
